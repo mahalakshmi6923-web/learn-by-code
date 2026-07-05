@@ -1,0 +1,450 @@
+class Main {
+    public static void main(String[] args) 
+    {
+        int score=-3;
+        if(score>=0&&score<=100)
+        if(score>=90)
+        System.out.print("grade 0");
+        else if(score>=80&& score>90)
+        System.out.print("grade A+");
+        else if(score>=70&& score>80)
+        System.out.print("grade A");
+        else if(score>=60&&score>70)
+        System.out.print("grade B+");
+        else if(score<=50&&score>60)
+        System.out.print("grade B");
+        else if(score>=40&&score>50)
+        System.out.print("just pass");
+        else
+        System.out.print("better luck next time");
+        else
+        System.out.print("u dont know to enter the mark");
+        
+          
+   }
+
+else if lader
+class Main {
+    public static void main(String[] args) 
+    {
+        int num1=10;
+        int num2=3;
+        char symbol='*';
+        if(symbol=='+')
+        {
+            System.out.print("addition:"+num1+"+"+num2+"="+(num1+num2));
+        }
+        else if(symbol=='-')
+        {
+           System.out.print("sub:"+num1+"-"+num2+"="+(num1-num2)); 
+        }
+        else if(symbol=='*')
+        {
+            System.out.print("mul:"+num1+"*"+num2+"="+(num1*num2)); 
+        }
+        else if(symbol=='%')
+        {
+            System.out.print("mol:"+num1+"%"+num2+"="+(num1%num2)); 
+        }
+        else
+        {
+            System.out.print("invalid");
+        }
+        
+          
+   }
+}
+
+switch
+class Main {
+    public static void main(String[] args) 
+    {
+        int num1=10;
+        int num2=5;
+        char opr='-';
+        switch(opr)
+        {
+            case '*','+','-':
+                int ans=num1*num2;
+                System.out.println("multi: "+num1+opr+num2+'='+ans);
+            break;
+             default:
+                System.out.println("not working");
+        
+    }
+}
+}
+
+switch ec
+public class Main
+{
+	public static void main(String[] args)
+	{
+		int day=4;
+		String ans=switch(day)
+		{
+		    case 1->"mon";
+		    case 2->"tue";
+		    case 3->"wed";
+		    case 4->"thur";
+		    case 5->"fri";
+		    case 6->"sat";
+		    case 7->"sun";
+		    default->"nothing";
+		    System.out.print(ans);
+		    
+		}
+	}
+}
+
+for loop
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    for(int num=1;num<=100;num++)
+	    {
+	        if(num%2==0)
+	        {
+	        System.out.println("even:"+num+" ");
+	    }
+	    else{
+	        System.out.println("odd:"+num+" ");
+	    }
+	    }
+	}
+}
+
+ways 
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   int box_ball=15;
+	   int ball_1=1;
+	   int ball_2=1;
+	   int ball_3=2;
+	   for(int ball=4;ball<=box_ball;ball+=1)
+	   {
+	       int sum=ball_3+ball_1;
+	       System.out.println("ball-"+ball+"="+sum+"ways");
+	       ball_1=ball_2;
+	       ball_2=ball_3;
+	       ball_3=sum;
+	   }
+	   
+	   
+		
+	}
+}
+
+happy number
+class Solution {
+public:
+    bool isHappy(int n) {
+        if(n==1 || n==7) return true;
+        else if(n<10) return false;
+        else{
+            int sum=0;
+            while(n>0){
+                int temp=n%10;
+                sum+= temp*temp;
+                n=n/10;
+            }
+            return isHappy(sum);
+        }
+    }
+};
+
+palindrom
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    int x=-121;
+        int original = x;
+        int rev = 0;
+
+        while(x > 0)
+        {
+            int rem = x % 10;
+            rev = rev * 10 + rem;
+            x = x / 10;
+        }
+
+        if(original == rev)
+        {
+            System.out.print("yes palindrom");
+        }
+        else
+        {
+         System.out.print("not a palindrom");
+        }
+    }
+
+		
+}
+sum of tow cubes
+public class Main
+{
+    public static void main(String[] args)
+    {
+        int n = 66;
+
+        for(int i = 1; i <= n; i++)
+        {
+            for(int j = 1; j <= n; j++)
+            {
+                if(i*i*i + j*j*j == n)
+                {
+                    System.out.println("cubes");
+                    return;
+                }
+            }
+        }
+
+        System.out.println("not a cubes");
+    }
+}
+ph num
+public class Main
+{
+	public static void main(String[] args)
+	{
+	   int num=7448;
+	   String pn="";
+	   while(num>0)
+	   {
+	       switch(num%10)
+	       {
+	           case 0:pn="zero "+pn;break;
+	           case 1:pn="one "+pn;break;
+	           case 2:pn="two "+pn;break;
+	           case 3:pn="three "+pn;break;
+	           case 4:pn="four "+pn;break;
+	           case 5:pn="five "+pn;break;
+	           case 6:pn="six "+pn;break;
+	           case 7:pn="seven "+pn;break;
+	           case 8:pn="eight "+pn;break;
+	           case 9:pn="nine "+pn;break;
+	       }
+	       num/=10;
+	   System.out.println(pn+" ");
+	   }
+	}	
+}
+Fibonacci
+public class Main
+{
+	public static void main(String[] args)
+	{
+	    int fibo=15;
+	    int fib[]=new int[fibo];
+	    fib[0]=0;
+	    fib[1]=1;
+	    for(int ind=2;ind<fibo;ind++)
+          {
+              fib[ind]=fib[ind-1]+fib[ind-2];
+          }
+          for(int ind=0;ind<fibo;ind++)
+          {
+              System.out.println("fibonacci("+ind+")="+fib[ind]+" ");
+          }
+	}
+}
+BOX IN ARRAY
+ublic class Main
+{
+	public static void main(String[] args) 
+	{
+	    int box_ball[]=new int[15];
+	    int ball_1=1;
+	    int ball_2=1;
+	    int ball_3=2;
+	    for(int i=4;i<=box_ball.length;i+=1)
+	    {
+	        int sum=ball_3+ball_1;
+	        System.out.println(sum);
+	        ball_1=ball_2;
+	        ball_2=ball_3;
+	        ball_3=sum;
+	    }
+	        
+	    
+	    
+		
+	}
+}
+palindrome
+public class Main
+{
+    public static void main(String[] args)
+    {
+        String name = "mame";
+        String str = "";
+
+        int size = name.length();
+
+        for(int i = 0; i <= size-1; i++)
+        {
+            str = name.charAt(i) + str;
+        }
+        int flag=0;
+        for(int i=0;i<=size-1;i++)
+        {
+            if(name.charAt(i)!=str.charAt(i))
+            {
+            flag=1;
+            break;
+            }
+        }
+        if(flag == 0)
+        {
+            System.out.print("palindrome");
+        }
+        else
+           {sop("not a palindrome")}
+valid pass
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    String pass="#varsH132";
+	    int strlen=pass.length();
+	    int caps=0;
+	    int small=0;
+	    int digit=0;
+	    int spl=0;
+	    for(int i=0;i<strlen;i++)
+	    {
+	        char ch=pass.charAt(i);
+	        if(ch>='A'&&ch<='Z')
+	        caps++;
+	        else if(ch>='a'&&ch<='z')
+	        small++;
+	        else if(ch>='0'&&ch<='9')
+	        digit++;
+	        else
+	        spl++;
+	    }
+	    if(strlen>=8&&caps>0&&small>0&&digit>0&&spl>0)
+	    {
+	        System.out.print(
+duplicate values
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    int arr[]={1,1,2,3,4,12,2};
+	    int size=arr.length;
+	    for(int i=0;i<size;i++)
+	    {
+	        int count=0;
+	        for(int k=0;k<i;k++)
+	        {
+	            if(arr[i]==arr[k])
+	            {
+	                count++;
+	            }
+	        }
+	        if(count>0)
+	        {
+	            continue;
+	        }
+	        for(int j=i+1;j<size;j++)
+	        {
+	            if(arr[i]==arr[j])
+	            {
+	                System.out.println(arr[i]);
+	                break;
+	            }
+	        }
+	    }
+		
+	}
+}
+type casting
+class Father
+{
+   void money()
+   {
+       System.out.println("get money from the father");
+   }
+}
+class Son extends Father
+{
+    void fee()
+    {
+        System.out.println("pay the fee ");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   Father obj=new Son();
+	   ((Son)(obj)).fee();
+	   obj.money();
+	}
+}
+
+selection sort
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		int arr[]={1680,245,-2530,44,19,4,25,10754};
+		int size=arr.length;
+		System.out.print("ori arr: ");
+		for(int ind=0;ind<size;System.out.print(arr[ind++]+" "));
+		System.out.println();
+		for(int i=0;i<size-1;i++)
+		{
+		    int min=i;
+		    for(int j=i+1;j<size;j++)
+		    {
+		        if(arr[min]>arr[j])
+		        {
+		            min=j;
+		            
+		        } 
+		    }
+		    int temp=arr[i];
+		    arr[i]=arr[min];
+		    arr[min]=temp;
+		    System.out.print("pass"+i+":");
+		    for(int ind=0;ind<size;System.out.print(arr[ind++]+" "));
+		    System.out.println();
+		}
+	}
+}
+Bubbles sort
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		int arr[]={5,7,12,-20,500,19,0,8,44,75};
+		int size=arr.length;
+		System.out.print("ori arr: ");
+		for(int ind=0;ind<size;System.out.print(arr[ind++]+" "));
+		System.out.println();
+		for(int j=1;j<size;j++)
+		{
+		    System.out.print("pass"+(j)+": ");
+		    for(int i=0;i<size-j;i++)
+		    {
+		        if(arr[i]>arr[i+1])
+		        {
+		           int temp=arr[i];
+		           arr[i]=arr[i+1];
+		           arr[i+1]=temp;
+		            
+		        }
+		    }
+		   
+		    
+		    for(int ind=0;ind<size;System.out.print(arr[ind++]+" "));
+		    System.out.println();
+		}
+	}
+}

@@ -1,0 +1,76 @@
+class Main {
+    public static void main(String[] args) 
+    {
+        int score=-3;
+        if(score>=0&&score<=100)
+        if(score>=90)
+        System.out.print("grade 0");
+        else if(score>=80&& score>90)
+        System.out.print("grade A+");
+        else if(score>=70&& score>80)
+        System.out.print("grade A");
+        else if(score>=60&&score>70)
+        System.out.print("grade B+");
+        else if(score<=50&&score>60)
+        System.out.print("grade B");
+        else if(score>=40&&score>50)
+        System.out.print("just pass");
+        else
+        System.out.print("better luck next time");
+        else
+        System.out.print("u dont know to enter the mark");
+        
+          
+   }
+
+else if lader
+class Main {
+    public static void main(String[] args) 
+    {
+        int num1=10;
+        int num2=3;
+        char symbol='*';
+        if(symbol=='+')
+        {
+            System.out.print("addition:"+num1+"+"+num2+"="+(num1+num2));
+        }
+        else if(symbol=='-')
+        {
+           System.out.print("sub:"+num1+"-"+num2+"="+(num1-num2)); 
+        }
+        else if(symbol=='*')
+        {
+            System.out.print("mul:"+num1+"*"+num2+"="+(num1*num2)); 
+        }
+        else if(symbol=='%')
+        {
+            System.out.print("mol:"+num1+"%"+num2+"="+(num1%num2)); 
+        }
+        else
+        {
+            System.out.print("invalid");
+        }
+        
+          
+   }
+}
+
+switch
+class Main {
+    public static void main(String[] args) 
+    {
+        int num1=10;
+        int num2=5;
+        char opr='-';
+        switch(opr)
+        {
+            case '*','+','-':
+                int ans=num1*num2;
+                System.out.println("multi: "+num1+opr+num2+'='+ans);
+            break;
+             default:
+                System.out.println("not working");
+        
+    }
+}
+}
